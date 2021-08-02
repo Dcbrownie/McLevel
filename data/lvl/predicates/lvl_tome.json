@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {
   "condition": "minecraft:entity_properties",
@@ -10,3 +11,17 @@
     }
   }
 }
+=======
+
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "nbt": "{title:\"Level Tome\"}"
+      }
+    }
+  }
+}
+>>>>>>> merge vsc for remote work
