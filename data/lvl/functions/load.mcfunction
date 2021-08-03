@@ -8,11 +8,11 @@ scoreboard objectives add lvl_luck dummy "Luck"
 #general settings
 #modes[0:independent xp, 1:spend xp, 2:train skills]
 execute unless data storage minecraft:lvl_config lvl_mode run data modify storage minecraft:lvl_config lvl_mode set value 1
-execute unless data storage minecraft:lvl_config max_lvl run data modify storage minecraft:lvl_config max_lvl set value {lvl:50,value:true}
 execute unless data storage minecraft:lvl_config max_individual_lvl run data modify storage minecraft:lvl_config max_individual_lvl set value {lvl:20,value:true}
 execute unless data storage minecraft:lvl_config announce_lvl run data modify storage minecraft:lvl_config announce_lvl set value true
 #mode 1 settings
 execute unless data storage minecraft:lvl_config mode1.auto_level run data modify storage minecraft:lvl_config mode1.auto_level set value false
+execute unless data storage minecraft:lvl_config mode1.max_lvl run data modify storage minecraft:lvl_config mode1.max_lvl set value {lvl:50,value:true}
 #mode 2 settings
 execute unless data storage minecraft:lvl_config mode2.str_rate run data modify storage minecraft:lvl_config mode2.str_rate set value 200
 execute unless data storage minecraft:lvl_config mode2.dex_rate run data modify storage minecraft:lvl_config mode2.dex_rate set value 50000
