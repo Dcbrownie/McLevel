@@ -2,8 +2,8 @@
 execute store result score #lvl_icap_toggle lvl_internal run data get storage minecraft:lvl_config max_individual_lvl.value
 execute store result score #lvl_icap lvl_internal run data get storage minecraft:lvl_config max_individual_lvl.lvl
 #get current strength lvl and add to it
-execute if score #lvl_icap_toggle lvl_internal matches 1 if score @s lvl_constitution < #lvl_icap lvl_internal run scoreboard players add @s lvl_constitution 1
 execute if score #lvl_icap_toggle lvl_internal matches 1 if score @s lvl_constitution < #lvl_icap lvl_internal run scoreboard players remove @s lvl_sp 1
+execute if score #lvl_icap_toggle lvl_internal matches 1 if score @s lvl_constitution < #lvl_icap lvl_internal run scoreboard players add @s lvl_constitution 1
 execute if score #lvl_icap_toggle lvl_internal matches 1 if score @s lvl_constitution >= #lvl_icap lvl_internal run tellraw @s {"text":"Level Cap for Constitution Reached","color":"red"}
 execute unless score #lvl_icap_toggle lvl_internal matches 1 run scoreboard players add @s lvl_constitution 1
 execute unless score #lvl_icap_toggle lvl_internal matches 1 run scoreboard players remove @s lvl_sp 1
@@ -37,4 +37,4 @@ execute if score @s lvl_internal matches 2.. run attribute @s minecraft:generic.
 execute if score @s lvl_internal matches 2.. run scoreboard players operation @s lvl_internal %= #lvl_c2 lvl_internal
 execute if score @s lvl_internal matches 1.. run attribute @s minecraft:generic.max_health modifier add 6c766c76-3a31-2e30-2e30-30636f3a3031 lvl_con1 1.0 add
 #reset health
-effect @s give minecraft:instant_health 1 1 true
+effect give @s minecraft:instant_health 1 1 true
