@@ -16,3 +16,7 @@ This datapack features two modes currently; in mode 1, the player spends experie
 
 
 In order to get started, place this datapack in the datapacks folder of your world save. When you enter the world, you can get started by aquiring a Tome of Leveling, which is used to spend skill points acquired from leveling and to reset your character if necessary. In order to get this Tome of Leveling, sign a book and quil using the name "Level Tome" and it will automatically be converted
+
+Settings for the datapack can be accessed by running the command:
+
+/function lvl:settings
